@@ -2,6 +2,12 @@
 
 
 ## important stuff
+
+### installing it
+
+the Makefile has it all. mostly, you will need homebrew and pyenv on your machine. then, you run `make setup`. it may be that you have to restart your shell and add a section to the `.bashrc` or `.zshrc` to properly install pyenv.
+
+
 ### pyspark
 
 it took really **long** time to figure out this config, ***LEARNINGS:***
