@@ -4,7 +4,7 @@
 PYTHON = python3
 PYENV_VERSION = 3.9.13
 VENV = .venv
-APP_NAME = "schema-validate"
+APP_NAME = "example-app"
 
 .PHONY: all
 DEFAULT_GOAL: setup
