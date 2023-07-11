@@ -10,6 +10,10 @@ the Makefile has it all. mostly, you will need homebrew and pyenv on your machin
 
 ### pyspark
 
+you can run the sample dummy df via `python -i main.py` and interactively play in the session with the df object.
+
+#### reading from s3
+
 it took really **long** time to figure out this config, ***LEARNINGS:***
 * s3a has to be used to access files
 * most configs have to be set in the instantiated spark context
