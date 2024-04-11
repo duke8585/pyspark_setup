@@ -32,7 +32,7 @@ $(VENV)/touchfile: requirements.txt requirements-dev.txt
 
 update: # to force the upper
 	. $(VENV)/bin/activate && pip install --upgrade pip \
-	&& pip install -r requirements.txt && pip install -r requirements_dev.txt
+	&& pip install -r requirements.txt && pip install -r requirements-dev.txt
 
 cleanup:
 	@echo "Cleaning up the envs / temps."

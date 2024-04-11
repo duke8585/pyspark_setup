@@ -11,6 +11,7 @@ def read_from_s3():
     sc = get_spark_context()
     df = read_with_pyspark(sc, DUMMY_S3_FILE)
     df.show(10, 100, True)
+    return df
 
 
 def make_dummy_df():
@@ -32,4 +33,5 @@ def make_dummy_df():
 
 
 if __name__ == "__main__":
-    df = make_dummy_df()
+    # df = make_dummy_df()
+    df = read_from_s3()

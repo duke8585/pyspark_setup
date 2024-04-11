@@ -30,3 +30,9 @@ it took really **long** time to figure out this config, ***LEARNINGS:***
 * IF using SSO: `ProfileCredentialsProvider` does not work with sso atm, you need to:
   * use such a script [default credentials](https://gist.github.com/zartstrom/2ead1504f679fdcc1c16e77284ca8126) to insert the above mentioned values into your `.aws/credentials`
   * set the env variable accordingly `export AWS_PROFILE=default`# pyspark_setup
+  * full recipe when chaining roles:
+    * get credentials for source profile, add them to stanza in `~/.aws/credentials`
+    * get credentials for target profile, add them to stanza in `~/.aws/credentials`
+    * set AWS_PROFILE to target profile
+    * run script
+
