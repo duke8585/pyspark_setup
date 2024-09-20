@@ -3,6 +3,16 @@
 
 ## important stuff
 
+### prerequisites
+
+you will need a java version @8 or @11 according to the [compatibility matrix](https://sparkbyexamples.com/spark/spark-versions-supportability-matrix/) for pyspark. this is most easily done using [sdkman](https://github.com/sdkman/sdkman-cli). after installing - including adding the sourcing of sdkman to e.g. your `.zshrc` - you an simply
+
+```sh
+sdk install java 11.0.24-zulu
+sdk use java 11.0.24-zulu
+```
+
+
 ### installing it
 
 the Makefile has it all. mostly, you will need homebrew and pyenv on your machine. then, you run `make setup`. it may be that you have to restart your shell and add a section to the `.bashrc` or `.zshrc` to properly install pyenv.
